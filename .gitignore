@@ -1,0 +1,5 @@
+# Keep only the project files in version control.
+/*
+!/nvidia-driver-build.sh
+!/README.md
+!/.gitignore

@@ -177,4 +177,7 @@ done
 
 doas update-initramfs -u -k "$ver"
 
+cd "$script_dir"
+rm -rf -- "$source_dir"
+
 printf '\nDone for NVIDIA driver %s and kernel %s\n' "$version" "$ver"

@@ -44,9 +44,10 @@ From the directory containing the script, run:
 The script lists the five newest NVIDIA driver versions. Press Enter to select
 the newest version, or enter another displayed choice.
 
-The selected `.run` archive and its extracted driver directory are stored
-beside the script. An existing archive is reused only when its MD5 checksum
-matches NVIDIA's checksum file; otherwise, it is downloaded again and verified.
+The selected `.run` archive is stored beside the script and reused only when
+its MD5 checksum matches NVIDIA's checksum file; otherwise, it is downloaded
+again and verified. The archive is unpacked beside the script for the build,
+then the extracted driver directory is removed after a successful installation.
 
 The script builds the modules against the running kernel, copies all generated
 `.ko` files into `/lib/modules/<kernel-release>/extra/nvidia`, runs `depmod`,
